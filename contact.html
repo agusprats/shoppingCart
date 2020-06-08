@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>On Line Courses</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://use.fontawesome.com/25bfededf4.js"></script>
+</head>
+
+
+<body>
+    <header>
+		<nav class="menu">
+			<div class="container-menu">
+				<div class="logo">
+					<div class="logo-name">
+						
+						<img src="img/logo.jpg"  alt="">
+						<a href="#"></a>
+					</div>		
+					
+					<div class="icon-menu">
+						<a href="#" id="btn-menu" class="btn-menu"><span class="fa fa-bars"></span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="menu-link">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#final">CONTACT</a></li>
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-carrito">
+                        <div id="carrito">    
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+<!--
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.jpg" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</header>
+-->
+    <div id="hero">
+        <div class="container">
+            
+                <div class="row">
+                        <div class="six columns">
+                            <div class="contenido-hero">
+                                    <h2><strong>LEARN SOMETHING<span>New</span></strong></h2>
+                                    <p><strong>Every Course at $20</strong></p>
+                                    <form action="#" id="busqueda" method="post" class="formulario">
+                                        <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
+                                        <input type="submit" id="submit-buscador" class="submit-buscador">
+                                    </form>
+                            </div>
+                        </div>
+                </div> 
+            
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>100 On Line<br> Courses
+                        </p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Experienced<br>
+                            Teachers</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Lifetime Access <br>
+                        On Demand</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- COMIENZO SECCION FINAL con FORMULARIO DE CONTACTO-->
+<section id="final">
+	<div class="contenedorformulario">
+		<form action="" class="form">
+			<div class="form-header">
+				<h1 class="form-title">C<span>ontact</span></h1>
+			</div>
+
+			<label for="nombre" class="form-label">Name:</label>
+			<input type="text" id="nombre" class="form-input" placeholder="Type your Name">
+
+			<label for="direccion" class="form-label">Adress:</label>
+			<input type="text" id="direccion" class="form-input" placeholder="Type your Adress">
+
+			<label for="correo" class="form-label">E- Mail:</label>
+			<input type="email" id="correo" class="form-input" placeholder="Type your e-mail">
+
+			<label for="mensaje" class="form-label">Message:</label>
+			<textarea id="mensaje" class="form-textarea" placeholder="Write your message"></textarea>
+
+			<input type="submitn" class="btn-submitn" value="Send Message">
+		</form>
+	</div>
+
+</section>
+
+
+
+<footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menuf">
+                                <a class="enlace" href="#">About</a>
+                                <a class="enlace" href="#">Contact</a>
+                                <!--
+                                <a class="enlace" href="#">Developers</a>
+                                <a class="enlace" href="#">Partners</a>
+                                -->
+                                <a class="enlace" href="#">Jobs</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menuf">
+                                <a class="enlace" href="#">Legal</a>
+                                <a class="enlace" href="#">Help</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+    
+<script src="js/app.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
