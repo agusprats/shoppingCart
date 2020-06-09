@@ -135,18 +135,21 @@
 			</div>
 
 			<label for="nombre" class="form-label">Name:</label>
-			<input type="text" id="nombre" class="form-input" placeholder="Type your Name">
+			<input type="text" id="nombre" class="form-input" placeholder="At least 3 letters" required
+			pattern="[A-Za-z]{3,40}" >
 
-			<label for="direccion" class="form-label">Adress:</label>
-			<input type="text" id="direccion" class="form-input" placeholder="Type your Adress">
+			<label for="telephone" class="form-label">Telephone:</label>
+			<input type="text" id="telephone" class="form-input" placeholder="Between 6 and 10 digits"required
+           		 pattern="[0-9]{6,10}">
 
 			<label for="correo" class="form-label">E- Mail:</label>
-			<input type="email" id="correo" class="form-input" placeholder="Type your e-mail">
+			<input type="email" id="correo" class="form-input" placeholder="Type your e-mail" required>
 
 			<label for="mensaje" class="form-label">Message:</label>
-			<textarea id="mensaje" class="form-textarea" placeholder="Write your message"></textarea>
+			<textarea id="mensaje" class="form-textarea" placeholder="Write your message"  
+			minlength="5" maxlength="80" pattern="[A-Za-z0-9]"></textarea>
 
-			<input type="submitn" class="btn-submitn" value="Send Message">
+			<input type="submit" class="btn-submit" value="Send Message" id="enviar" onclick="show_alert();">
 		</form>
 	</div>
 
@@ -182,6 +185,7 @@
     
 <script src="js/app.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/form.js"></script>
 
 </body>
 </html>
